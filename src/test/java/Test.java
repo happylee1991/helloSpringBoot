@@ -20,4 +20,10 @@ public class Test {
     public void testSpring() {
         System.out.println(config.getServer_port());
     }
+
+    @org.junit.Test
+    public void testStr() {
+        System.out.println("\\test\\a.txt".replaceAll("\\\\","\\\\\\\\"));
+    }
 }
+
